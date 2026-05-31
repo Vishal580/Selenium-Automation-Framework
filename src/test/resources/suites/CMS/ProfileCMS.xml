@@ -1,0 +1,20 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
+<suite name="Regression Tests CMS">
+
+    <listeners>
+        <listener class-name="com.vishal.listeners.AnnotationTransformer"/>
+    </listeners>
+    
+    <test name="Test Profile CMS">
+        <parameter name="BROWSER" value="chrome"/>
+        <classes>
+            <class name="com.vishal.projects.cms.testcases.ProfileTest">
+                <methods>
+                    <include name="TC_AddNewAddress"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+</suite>
