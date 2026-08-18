@@ -29,7 +29,7 @@ public class ClientTest extends BaseTest {
         signInPageCRM = new SignInPageCRM();
     }
 
-    @FrameworkAnnotation(author = {AuthorType.AnhTester, AuthorType.AnVo}, category = {CategoryType.REGRESSION})
+    @FrameworkAnnotation(author = {AuthorType.Vishal, AuthorType.AnVo}, category = {CategoryType.REGRESSION})
     @Test(priority = 1, description = "Test Add New Client", dataProvider = "getClientDataHashTable", dataProviderClass = DataProviderManager.class)
     public void testAddClient(Hashtable<String, String> data) {
         dashboardPageCRM = signInPageCRM.signInWithAdminRole();
