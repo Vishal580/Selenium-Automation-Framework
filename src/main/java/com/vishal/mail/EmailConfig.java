@@ -26,10 +26,10 @@ public class EmailConfig {
     public static final String SERVER = getEnv("EMAIL_SERVER", "smtp.gmail.com");
     public static final String PORT = getEnv("EMAIL_PORT", "587");
 
-    public static final String FROM = getEnv("EMAIL_FROM", "anhtester@email.com");
+    public static final String FROM = getEnv("EMAIL_FROM", "");
     public static final String PASSWORD = getEnv("EMAIL_PASSWORD", "");
 
-    public static final String[] TO = getEmailArray(getEnv("EMAIL_TO", "anhtester@mailinator.com"));
+    public static final String[] TO = getEmailArray(getEnv("EMAIL_TO", ""));
     public static final String SUBJECT = REPORT_TITLE;
 
     private static Map<String, String> loadEnvFile() {
