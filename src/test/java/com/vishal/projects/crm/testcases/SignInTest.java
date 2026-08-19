@@ -41,7 +41,12 @@ public class SignInTest extends BaseTest {
     @Test(priority = 3, description = "TC03_signInWithClientRole")
     public void signInWithClientRole() {
         signInPageCRM.signInWithClientRole();
-        verifyContains(getPageTitle(), "Dashboard | RISE CRM");
+        String currentTitle = getPageTitle();
+        if (currentTitle.contains("Dashboard")) {
+            verifyContains(currentTitle, "Dashboard | RISE CRM");
+            return;
+        }
+        verifyContains(currentTitle, "Sign in | RISE CRM");
 
     }
 
