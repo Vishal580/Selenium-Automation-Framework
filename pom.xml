@@ -3,19 +3,19 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.anhtester</groupId>
+    <groupId>com.vishal</groupId>
     <artifactId>vishal-selenium-java</artifactId>
     <version>2.9.0</version>
-    <name>AutomationFrameworkSelenium</name>
-    <url>https://github.com/anhtester/AutomationFrameworkSelenium</url>
+    <name>Selenium-Automation-Framework</name>
+    <url>https://github.com/Vishal580/Selenium-Automation-Framework.git</url>
     <description>Test Automation Framework Selenium Java with TestNG building by Vishal</description>
 
     <developers>
         <developer>
             <name>Vishal</name>
-            <email>thaian.it15@gmail.com</email>
-            <organization>https://anhtester.com</organization>
-            <organizationUrl>https://github.com/anhtester</organizationUrl>
+            <email>vishalkhetriba@gmail.com</email>
+            <organization>https://portfolio-vishal-khetriba.vercel.app</organization>
+            <organizationUrl>https://github.com/Vishal580</organizationUrl>
         </developer>
     </developers>
 
@@ -291,13 +291,6 @@
             <groupId>org.apache.commons</groupId>
             <artifactId>commons-lang3</artifactId>
             <version>${commons-lang3.version}</version>
-        </dependency>
-
-        <!-- https://mvnrepository.com/artifact/io.github.cdimascio/java-dotenv -->
-        <dependency>
-            <groupId>io.github.cdimascio</groupId>
-            <artifactId>java-dotenv</artifactId>
-            <version>3.0.0</version>
         </dependency>
 
     </dependencies>
